@@ -1,0 +1,188 @@
+body {
+  font: 16px Arial;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  /*padding: 10px;*/
+  font-size: 16px;
+  /*left: -10px;*/
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #003DA5;
+  color: #fff;
+  cursor: pointer;
+  left: 50px;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+#banner {
+  /*background-image: url('slu.jpg');
+  background-position: center;
+  background-size: 75% 100%;
+  background-repeat: no-repeat;*/
+  position: center;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*max-width: 100%;
+  max-height: auto;
+  padding: 6em;*/
+  overflow: hidden;
+}
+
+#banner img {
+  max-width: 60%;
+  height: auto;
+}
+
+.top ul {
+  list-style-type: none;
+  margin: 1px;
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: #003DA5;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.top li {
+  width: auto;
+  display: inline;
+  margin: auto 1.5%;
+}
+
+.top li a {
+  color: white;
+  text-align: center;
+  padding: .40vw;
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-family: Palatino;
+}
+.link {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  /*color: #333;*/
+  transition: color .3s ease-out;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, white 0%, #003DA5 100%);
+  transition: transform .25 ease-out;
+}
+
+.link:hover::before {
+  transform: translateY(0);
+  transition: transform .25s ease-out;
+}
+
+.footerWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+  overflow: hidden;
+  background-color: #003DA5;
+}
+
+
+.footerContent {
+  width: 100%;
+  background-color: #003DA5;
+  padding: 20px 0px;
+  color: white;
+}
+
+.footer h3 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 1px;
+  color: white;
+}
+
+.footer h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer h5 {
+  float: left;
+  margin: 5px;
+  width: 100%;
+}
+
+.ParentHead h1, h2 {
+  text-align: center;
+}
+
+.ParentBody h3 {
+  text-align: center;
+}
+
+
+
