@@ -1,0 +1,68 @@
+
+
+.top ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+.top li {
+  float: left;
+}
+
+.top li a {
+  diplay: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.ParentHead h1, h2 {
+  text-align: center;
+}
+
+.ParentBody h3 {
+  text-align: center;
+}
+
+body .ParentImage {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
+}
+
+.footerWrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+.footerContent {
+  float: left;
+  width: 100%;
+  background-color: darkblue;
+  padding: 20px 0;
+  color: white;
+}
+
+.footer h2 {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
